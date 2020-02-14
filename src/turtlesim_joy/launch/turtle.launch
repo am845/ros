@@ -1,0 +1,11 @@
+<launch>
+  <node name="joy_node" pkg="joy" type="joy_node" />
+  <node name="turtlesim_joy" pkg="turtlesim_joy" type="turtlesim_joy">
+  </node>
+  <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" />
+  <param name="joy_node/dev" type="string" value="/dev/input/js1" />
+  <param name="axis_linear" value="1" type="int"/>
+  <param name="axis_angular" value="3" type="int"/>
+  <param name="scale_linear" value="2" type="double"/>
+  <param name="scale_angular" value="2" type="double"/>
+</launch>
